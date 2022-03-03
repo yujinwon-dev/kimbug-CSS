@@ -15,3 +15,51 @@ h1 {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+
+.user-card {
+  width: 240px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+/* float 요소의 부모에 clear */
+.user-card::after {
+  content: '';
+  display: block;
+  clear: left;
+}
+
+.user-photo {
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+/* img는 display: inline이지만 파일 자체의 사이즈가 있어서 width, height가 먹는 것임 */
+/* inline은 원래 width, height 줄 수 없으니 block으로 바꿔줌 */
+.user-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* inline은 width, height가 안 먹음!!! */
+.user-status {
+  position: absolute;
+  /* display: block; */
+  bottom: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #21D891;
+}
+
+.user-name {
+  float: left;
+  padding: 8px 0;
+}
