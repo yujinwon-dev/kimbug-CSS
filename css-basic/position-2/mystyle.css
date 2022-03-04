@@ -48,10 +48,8 @@ button {
 
 #prev {
   position: absolute;
-  top: 50%; /* absolute의 기준이 되는 요소를 기준으로 위치 */
+  top: 50%;
   left: 0;
-  /* translate(X축 기준, Y축 기준): 위치 이동 시 사용 */
-  transform: translateY(-50%);  /* 자신의 위치를 기준으로 배치. absolute를 이용할 경우 transform을 이용해서 가운데 배치 */
   background-image: url(./assets/icon-backward.svg);
 }
 
@@ -59,11 +57,11 @@ button {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
   background-image: url(./assets/icon-forward.svg);
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+
 .card {
   width: 400px;
 }
@@ -73,23 +71,24 @@ button {
 }
 
 .card-carousel img {
-  /* width, height를 주기 위해 block으로 */
   display: block;
-  /* width는 부모에 맞추고 height는 이미지 비율에 맞춤 */
-  width: 100%;
-  height: auto;
+  width: 400px;
+  height: 100%;
 }
 
 .card-content {
+  position: relative;
   padding: 12px 16px;
+  height: 114px;
 }
 
-.card-content h1 {
-  margin-bottom: 2px;
+.card-content > span {
+  display: block;
 }
 
 .card-content strong {
-  display: block;
-  margin-top: 8px;
-  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 12px 16px;
 }

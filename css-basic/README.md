@@ -4,6 +4,8 @@
   * [Float 1](#float-1)
   * [Float 2](#float-2)
   * [Position 1](#position-1)
+  * [Position 2](#position-2)
+  * [Position 3](#position-3)
 
 <br>
 
@@ -20,3 +22,11 @@
 ## Position 1
 
 ![image-20220303235018876](README.assets/image-20220303235018876.png)
+
+## Position 2
+
+![image-20220304225354646](README.assets/image-20220304225354646.png)
+
+## Position 3
+
+![image-20220304232517186](README.assets/image-20220304232517186.png)
