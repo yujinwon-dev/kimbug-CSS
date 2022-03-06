@@ -6,6 +6,7 @@
   * [Position 1](#position-1)
   * [Position 2](#position-2)
   * [Position 3](#position-3)
+  * [Flexbox 3](#flexbox-3)
 
 <br>
 
@@ -30,3 +31,7 @@
 ## Position 3
 
 ![image-20220304232517186](README.assets/image-20220304232517186.png)
+
+## Flexbox 3
+
+![image-20220306180313788](README.assets/image-20220306180313788.png)
