@@ -42,28 +42,23 @@ a {
 
 /* ▼ WHERE YOUR CODE BEGINS */
 
-/* 자식의 height만큼 차지하므로 banner에서는 height 선언 안 해도 됨 */
 .banner {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #ffc82c;
 }
 
-/* 배너 안의 어떤 부분을 클릭해도 링크 이동 가능하도록 a태그에 width, height를 줌 */
-.banner-title a {
+.banner a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  width: 100%;
   height: 64px;
+  font-size: 18px;
 }
 
 .landing {
   display: flex;
-  /* 세로 정렬할 거니까 direction column */
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -77,30 +72,24 @@ a {
   margin-bottom: 24px;
 }
 
-/* width, height 먹으려면 block이어야 함 */
-/* 하지만 그 안에서 정렬도 해줘야 하므로 flex로 선언! */
 .landing-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 160px;
   height: 52px;
-  font-size: 15px;
-  border: 2px solid #fff;
-  border-radius: 16px;
-  /* 투명도 설정할 때는 rgba 사용 */
   background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #FFF;
+  border-radius: 16px;
 }
 
-/* 모바일일 때는 위 스타일링대로 적용하다가 768px 이상일 때부터 아래 스타일 적용 */
 @media screen and (min-width: 768px) {
   .banner {
-    /* top/bottom 중 하나를 적용할 것이므로 bottom 값 해제 */
     bottom: auto;
     top: 0;
   }
 
-  .banner-title a {
+  .banner a {
     height: 80px;
   }
 
@@ -112,11 +101,5 @@ a {
     font-size: 50px;
     text-align: center;
     margin-bottom: 32px;
-  }
-
-  .landing-link {
-    width: 180px;
-    height: 56px;
-    font-size: 18px;
   }
 }

@@ -7,6 +7,7 @@
   * [Position 2](#position-2)
   * [Position 3](#position-3)
   * [Flexbox 3](#flexbox-3)
+  * [Media Query](#media-query)
 
 <br>
 
@@ -35,3 +36,9 @@
 ## Flexbox 3
 
 ![image-20220306180313788](README.assets/image-20220306180313788.png)
+
+## Media Query
+
+![image-20220313230616399](README.assets/image-20220313230616399.png)
+
+![image-20220313230600265](README.assets/image-20220313230600265.png)
