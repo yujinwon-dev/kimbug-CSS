@@ -1,0 +1,45 @@
+@font-face {
+  /* 사용할 웹폰트 스펙 설정 */
+  font-family: "YJ"; /* 서체명(정하기 나름) */
+  font-style: normal;
+  font-weight: 300;
+  /* 각 브라우저마다 지원하는 확장자가 다름 */
+  src: url('./assets/fonts/NanumSquareRoundL.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/NanumSquareRoundL.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/NanumSquareRoundL.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundL.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundL')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "YJ";
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/NanumSquareRoundR.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/NanumSquareRoundR.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/NanumSquareRoundR.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundR.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundR')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "YJ";
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/NanumSquareRoundB.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/NanumSquareRoundB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/NanumSquareRoundB.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundB.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundB')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "YJ";
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/NanumSquareRoundEB.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/NanumSquareRoundEB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/NanumSquareRoundEB.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundEB.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/NanumSquareRoundEB')  format('truetype'); /* Safari, Android, iOS */
+}

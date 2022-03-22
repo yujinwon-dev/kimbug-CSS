@@ -8,6 +8,7 @@
   * [Position 3](#position-3)
   * [Flexbox 3](#flexbox-3)
   * [Media Query](#media-query)
+  * [Typography](#typography)
 
 <br>
 
@@ -42,3 +43,7 @@
 ![image-20220313230616399](README.assets/image-20220313230616399.png)
 
 ![image-20220313230600265](README.assets/image-20220313230600265.png)
+
+## Typography
+
+![image-20220323002515057](README.assets/image-20220323002515057.png)
