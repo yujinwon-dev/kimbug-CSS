@@ -9,6 +9,7 @@
   * [Flexbox 3](#flexbox-3)
   * [Media Query](#media-query)
   * [Typography](#typography)
+  * [Background](#background)
 
 <br>
 
@@ -49,3 +50,7 @@
 ![image-20220323002515057](README.assets/image-20220323002515057.png)
 
 ![image-20220324233848066](README.assets/image-20220324233848066.png)
+
+## Background
+
+![image-20220326022946906](README.assets/image-20220326022946906.png)

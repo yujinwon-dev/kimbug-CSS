@@ -7,8 +7,18 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* screen reader only*/
+/* 아무 정보 없이 2 guests, 1 bedroom 하면 뭐야..? 싶음 */
+/* 그러므로 Rooms and beds 정보를 주고 이걸 sr-only 처리하면 좋음 */
+/* 그런데 display: none 하면 스크린리더도 읽어주지 않음 -> Bad */
 .sr-only {
-  display: none;
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  /* 0px로 주면 display: none과 같게 처리함 */
+  overflow: hidden;
+  opacity: 0;
 }
 
 .like-button {
@@ -19,54 +29,73 @@ body {
 
 .card {
   display: flex;
+  width: 840px;
   padding: 24px;
 }
 
+/* 유저가 어떤 크기의 이미지를 올릴지 알 수 없는데 이미지 크기를 300*200으로 맞춰야 하는 상황 */
+/* 가로가 긴 이미지에 맞게 css 해놨는데 다른 이미지는 세로가 긴 이미지라면..? */
+/* 이런 경우 background-image로 해서 설정하면 간단 */
 .card-image {
   position: relative;
-}
-
-.img-house {
   width: 300px;
   height: 200px;
   background-image: url('./assets/img-house.jpg');
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 6px;
-  margin-right: 20px;
+  margin-right: 24px;
 }
 
-.like-button {
+.card-image .like-button {
   position: absolute;
   top: 12px;
   left: 12px;
   width: 36px;
   height: 36px;
+  background-color: #FFF;
   background-image: url('./assets/icon-favorite.svg');
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 24px 24px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
 }
 
 .plus-badge {
+  display: inline-block;
   color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42857142;
   background-color: #92174D;
   padding: 1px 8px;
   border-radius: 4px;
-  margin-right: 8px;
+  margin-right: 6px;
+  text-transform: uppercase;
+}
+
+/* 사이즈 따로 안 주면 갖고 있는 컨텐트의 크기만큼만 가짐 */
+/* flex에서 남는 공간 있으면 차지하도록 */
+.card-content {
+  flex-grow: 1;
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .card-title {
   font-size: 20px;
   line-height: 1.6;
+  color: #151B26;
+  font-weight: 400;
+  margin-bottom: 16px;
 }
 
 .property-type {
@@ -74,10 +103,19 @@ body {
 }
 
 .property-type span {
+  font-size: 16px;
+  line-height: 1.25;
   color: #7D858F;
 }
 
+.property-rate {
+  font-size: 16px;
+  line-height: 1.25;
+
+}
+
 .property-rate strong {
+  color: #151b26;
   font-weight: 400;
 }
 
@@ -87,12 +125,14 @@ body {
 
 .property-rate::before {
   content: '';
+  position: relative;
+  top: 2px;
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
   background-image: url('./assets/icon-star.svg');
+  background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
 }
 
 .card-title {
@@ -100,7 +140,23 @@ body {
   margin-bottom: 16px;
 }
 
-.property-detail dd {
+.property-detail {
+  font-size: 14px;
+  line-height: 1.1428571429;
   color: #7D858F;
+}
+
+.property-detail dd span::after {
+  content: '·';
+  margin: 0 8px;
+}
+
+.property-detail div:first-child {
   margin-bottom: 8px;
+}
+
+/* 마지막 요소에 뒤에 붙는 거 없애기 */
+.property-detail dd span:last-child::after {
+  content: '';
+  margin: 0;
 }
