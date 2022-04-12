@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100vh;
+}
+
+.line-button {
+  width: 110px;
+  height: 56px;
+  background-color: #fff;
+  border: none;
+  
+}
+
+.line-button:hover {
+  border-bottom: 10px solid #0066ff;
+  transition: border-bottom 2500ms ease-in;
+}

@@ -1,1 +1,49 @@
 /* ▼ WHERE YOUR CODE BEGINS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* button 등 form 관련 요소는 body에 적용해도 안 먹음! 따로 선언 */
+button,
+input,
+textarea {
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+}
+
+.line-button {
+  position: relative;
+  padding: 18px 30px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #151B26;
+  cursor: pointer;
+}
+
+.line-button::after {
+  content: '';
+  /* absolute 사용 시 block으로 신분 상승 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* 0px이 아니라 0으로 적는 게 정석 */
+  width: 0;
+  height: 2px;
+  background-color: #0066ff;
+  /* transition 속성이 여기서 저기로 스르르 바뀌도록 */
+  transition: width 250ms linear, background-color 250ms linear;
+}
+
+.line-button:hover::after {
+  width: 100%;
+  background-color: hotpink;
+}
